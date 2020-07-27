@@ -28,6 +28,10 @@
 
         //Send a pageview to control hit sending with unique and persistent client ID (cid parameter)
         ga('send', 'pageview');
+        
+        //To have more control on session creation on returning visitors, new "server session" may be specified with the sessionControl field
+        //ga('send', 'pageview', { 'sessionControl': 'start' });//'end' value is not required (automatically deducted by Google Analytics)
+
         </script>
         <!-- End Google Analytics -->
     </body>

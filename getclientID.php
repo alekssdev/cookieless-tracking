@@ -8,6 +8,7 @@ header("Cache-Control: private");
 header("Pragma: private");
 //File Type
 header("Content-type:text/javascript");
+
 // Get an RFC-4122 v4 compliant globaly unique identifier (used by Google Analytics)
 function get_guid() {
     $data = PHP_MAJOR_VERSION < 7 ? openssl_random_pseudo_bytes(16) : random_bytes(16);
